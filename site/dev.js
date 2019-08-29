@@ -12,7 +12,6 @@ import Api from './components/api';
 import './components';
 import demoBox from './components/demoBox';
 import demoContainer from './components/demoContainer';
-import Test from '../components/test/index.vue';
 import zhCN from './theme/zh-CN';
 import enUS from './theme/en-US';
 Vue.use(Vuex);
@@ -34,7 +33,7 @@ const i18n = new VueI18n({
 
 const router = new VueRouter({
   mode: 'history',
-  routes: [{ path: '/*', component: Test }],
+  routes: [{ path: '/*'}],
 });
 
 const store = new Vuex.Store({
